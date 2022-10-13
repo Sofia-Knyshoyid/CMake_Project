@@ -1,4 +1,4 @@
-#include "mystring.h"
+#include "../library/mystring.h"
 
 void run_constructors() {
     std::cout<<"my_str_t(100, 'w'):\n";
