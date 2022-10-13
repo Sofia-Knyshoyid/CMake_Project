@@ -1,7 +1,6 @@
 #ifndef LAB1CSTRING
 #define LAB1CSTRING
 
-#pragma once
 #include <iostream>
 class my_str_t {
 private:
