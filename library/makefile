@@ -6,4 +6,4 @@ mystring.o: mystring.cpp mystring.h
 
 .PHONY: clean
 clean:
-	rm -rf *.o
+	rm -rf *.o libmystring.a
