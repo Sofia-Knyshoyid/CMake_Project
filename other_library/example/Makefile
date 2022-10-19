@@ -6,19 +6,22 @@ CXXFLAGS = -w
 
 BUILDDIR = ./compiled_files
 LIB_PATH = ../library/compiled_files/libjpeg.so
-EXACUTABLE1 = cdjpeg
+FILE1 = cdjpeg.o
 EXACUTABLE2 = cjpeg
 EXACUTABLE3 = djpeg
 HEADERS = $(wildcard ../library/*.h)
 OBJECTS = $(patsubst %.c,  $(BUILDDIR)/%.o, $(wildcard *.c))
 
-all: dir $(BUILDDIR)/$(EXACUTABLE2)
+all: dir $(BUILDDIR)/$(EXACUTABLE2) $(BUILDDIR)/$(EXACUTABLE3)
 
 dir:
 	mkdir -p $(BUILDDIR)
 
-$(BUILDDIR)/$(EXACUTABLE2): $(BUILDDIR)/$(EXACUTABLE2).o
-	$(CXX) $< $(LIB_PATH) -o $@
+$(BUILDDIR)/$(EXACUTABLE2): $(BUILDDIR)/$(EXACUTABLE2).o $(BUILDDIR)/$(FILE1)
+	$(CXX) $< $(LIB_PATH) $(BUILDDIR)/$(FILE1) -o $@
+
+$(BUILDDIR)/$(EXACUTABLE3): $(BUILDDIR)/$(EXACUTABLE3).o $(BUILDDIR)/$(FILE1)
+	$(CXX) $< $(LIB_PATH) $(BUILDDIR)/$(FILE1) -o $@
 
 $(OBJECTS): $(BUILDDIR)/%.o: %.c
 	$(CXX) $(CXXFLAGS) -c $< -I../library/ -o $@
