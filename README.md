@@ -19,7 +19,7 @@ Run ```./bashfile.sh``` from the project directory to compile `mystring` project
 
 Run ```./bashfile_jpeg.sh``` from the project directory to compile `jpeg` project.
 
-![image](https://user-images.githubusercontent.com/49194660/197025281-ee7fdbec-bafd-403a-9581-1aebf51ab53f.png)
+![image](https://user-images.githubusercontent.com/49194660/197029470-c1985012-a452-4a68-bc3d-187b5e85fef8.png)
 
 
 
