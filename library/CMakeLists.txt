@@ -8,5 +8,5 @@ if(MSVC)
     set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS TRUE)
 endif()
 
-add_subdirectory(library)
-add_subdirectory(example)
+set(MY_LIB mystring.cpp mystring.h)
+add_library(mystring_shared SHARED ${MY_LIB})

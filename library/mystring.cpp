@@ -434,19 +434,19 @@ std::ostream& operator<<(std::ostream& stream, const my_str_t& str){
     return stream;
 }
 //Made by: Sofia Knyshoyid
-std::istream& operator>>(std::istream& stream, my_str_t& str){
-    while (!isspace(stream.peek()) && stream){
-        str.append(stream.get());
-    return stream;   
-    }
-}
-//Made by: Sofia Knyshoyid
-std::istream& readline(std::istream& stream, my_str_t& str){
-    while (stream.peek()!='\n' && stream){
-        str.append(stream.get());
-    return stream;   
-    }
-}
+//std::istream& operator>>(std::istream& stream, my_str_t& str){
+//    while (!isspace(stream.peek()) && stream){
+//        str.append(stream.get());
+//    return stream;
+//    }
+//}
+////Made by: Sofia Knyshoyid
+//std::istream& readline(std::istream& stream, my_str_t& str){
+//    while (stream.peek()!='\n' && stream){
+//        str.append(stream.get());
+//    return stream;
+//    }
+//}
 
 
 //Yaryna Fialko

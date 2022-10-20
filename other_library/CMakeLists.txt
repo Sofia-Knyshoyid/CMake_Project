@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.20)
-set(PROJECT_NAME mystring)
-project($(PROJECT_NAME) CXX)
+set(PROJECT_NAME cmake_new_lib)
+project($(PROJECT_NAME) C)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_C_STANDARD 99)
 
 if(MSVC)
     set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS TRUE)
