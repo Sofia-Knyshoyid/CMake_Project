@@ -70,6 +70,20 @@ To delete the results of compilation run ```make clean``` in ```./other_library/
 ![image](https://user-images.githubusercontent.com/92580927/196973145-c60da516-089d-4df2-b6bf-5716988d7b06.png)
 
 
+##### CMake
+Firstly, we can run cmake for our library of mystring project.
+create new directory, run "cmake .. && make" from there
+![Screenshot from 2022-10-20 20-55-56](https://user-images.githubusercontent.com/87498412/197031190-d4093cf1-c018-4b7c-8a65-c84d6ab4dca7.png)
+
+The compiled executable file, "mystring_example", will be placed in "example" subdirectory
+![Screenshot from 2022-10-20 20-56-27](https://user-images.githubusercontent.com/87498412/197031415-f2aa6c7b-4801-4f78-ab3d-e8dbb6525fd8.png)
+
+Similarly, we can follow the same steps for `jpeg` library
+![Screenshot from 2022-10-20 21-01-32](https://user-images.githubusercontent.com/87498412/197031651-60df74df-698e-458c-8368-e70749ca4598.png)
+
+The resulting executable files, "cmake_new_lib_cjpeg" and "cmake_new_lib_djpeg", will be placed in "example" subdirectory
+![Screenshot from 2022-10-20 21-04-38](https://user-images.githubusercontent.com/87498412/197031865-615ecfbb-7ab2-4620-badf-870e093943a0.png)
+
 
 
 ### Installation
