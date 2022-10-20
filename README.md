@@ -1,8 +1,8 @@
 <mark>Template for your README. Remove all unused parts and instructions</mark>
 
 # Lab work <mark>NUMBER</mark>: <mark>SHORT TOPIC</mark>
-Authors (team): <mark>AUTHORS WITH GITHUB LINKS</mark><br>
-Variant: <mark>VARIANT SHOULD BE HERE</mark>
+Authors (team): <mark>[Shvets Anastasiia](https://github.com/shnasta), [Fialko Yaryna](https://github.com/YarynaFialko), [Kazymyr Arsenii](https://github.com/Arsenii6666), [Sofia Knyshoyid](https://github.com/Sofia-Knyshoyid) LINKS</mark><br>
+Variant: <mark>1</mark>
 ## Prerequisites
 
 <mark>LIST LIBRARIES/TOOLS/OTHER UTILITIES THAT NEED TO BE INSTALLED (E.G. GCC, OPENMP, CMAKE ETC)</mark>
