@@ -1,13 +1,20 @@
+CXX = g++
+CXXFLAGS = -w
+
 all: dir_compiled_files demonstration
 
 dir_compiled_files:
 	mkdir -p compiled_files
 
 demonstration: demonstration.o
-	g++ compiled_files/demonstration.o ../library/compiled_files/libmystring.so -o compiled_files/demo
+	$(CXX) compiled_files/demonstration.o ../library/compiled_files/libmystring.so -o compiled_files/demo
 demonstration.o: demonstration.cpp
-	g++ -c demonstration.cpp -o compiled_files/demonstration.o
+	$(CXX) $(CXXFLAGS) -c demonstration.cpp -o compiled_files/demonstration.o
 
-.PHONY: clean
+.PHONY: clean release
+
+release: CXXFLAGS += -O3
+release: all
+
 clean:
 	rm -rf ./compiled_files
