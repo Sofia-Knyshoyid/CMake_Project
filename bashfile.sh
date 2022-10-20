@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+
 mkdir -p compiled_files
 g++ -c library/mystring.cpp -o compiled_files/mystring.o
 g++ library/mystring.cpp -o compiled_files/mystringdynamic.o -c -fPIC
