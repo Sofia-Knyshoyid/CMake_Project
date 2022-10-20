@@ -9,13 +9,18 @@ Variant: <mark>1</mark>
 
 ### Compilation
 
-<mark>HOW TO COMPILE YOUR PROGRAM? (RECOMMENDED: ./comile.sh)</mark>
+<mark>You can compile our project using Linux terminal or WSL on Windows.</mark>
 
 #### 1. Bash
 
-Run ```./bashfile.sh``` from the project directory to compile mystring project.
+Run ```./bashfile.sh``` from the project directory to compile `mystring` project.
 
 ![image](https://user-images.githubusercontent.com/92580927/196960790-e537e510-fd63-44b2-b6f8-c3a9f9f32e62.png)
+
+Run ```./bashfile_jpeg.sh``` from the project directory to compile `jpeg` project.
+
+![image](https://user-images.githubusercontent.com/49194660/197025281-ee7fdbec-bafd-403a-9581-1aebf51ab53f.png)
+
 
 
 #### 2. Make
@@ -42,8 +47,9 @@ To delete the results of compilation run ```make clean``` in ```./library``` dir
 ![image](https://user-images.githubusercontent.com/92580927/196969881-8bafc6f3-39e2-4d1f-8df1-f2e271d7b599.png)
 
 
+##### Library `jpeg`
 
-Similarly, compilation of jpeg library (other popular C library)
+Similarly, compilation of `jpeg` library (other popular C library from the task)
 
 
 First, run ```make``` from the ```./other_library/library``` directory to compile a library.
